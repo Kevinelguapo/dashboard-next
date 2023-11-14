@@ -1,5 +1,14 @@
 {
-  "node": {},
+  "node": {
+    "6994fdb640d0aa7ea43c123cd1870c14d2d38f3b": {
+      "workers": {
+        "app/dashboard/invoices/create/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fkevin%2FCode%2Frepo%2Fdashboard-next%2Fapp%2Flib%2Factions.ts%22%2C%5B%22createInvoice%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/dashboard/invoices/create/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "mGDcPcj5Aop/jR5UqSW5bNPjraXIVmyrGEGbPufIm78="
+  "encryptionKey": "TaS9RpbVRRm9+8iay2v0R2kexfiR3JS/BTFIkrr3RZE="
 }

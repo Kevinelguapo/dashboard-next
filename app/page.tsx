@@ -1,3 +1,4 @@
+
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import styles from '@/app/ui/home.module.css';
@@ -7,11 +8,12 @@ import mobileView from '../public/hero-mobile.png';
 import desktopView from '../public/hero-desktop.png';
 
 import Link from 'next/link';
+
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-      
-      <div className="flex h-20 shrink-0 items-end rounded-lg bg-purple-600 p-4 md:h-52">
+
+      <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-600 p-4 md:h-52">
         <AcmeLogo />
       </div>
 
@@ -20,17 +22,26 @@ export default function Page() {
 
           <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             <strong>Welcome to Diamond Coffee.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-purple-600">
+            <a href="https://nextjs.org/learn/" className="text-blue-600">
               Next.js Learn Course
             </a>
             , brought to you by Vercel.
           </p>
+          
+          <div className="flex flex-row md:flex-col gap-4 items-center justify-center">
           <Link
             href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-purple-700 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+            className="flex items-center gap-5 self-start rounded-lg bg-blue-700 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
+          <Link
+            href='/dashboard'
+            className="flex items-center gap-5 self-start rounded-lg bg-blue-700 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+          >
+            <span>Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" />
+          </Link>
+          </div>
         </div>
         <div style={{
           position: 'relative',
@@ -47,14 +58,14 @@ export default function Page() {
               width: '100%',
               height: 'auto',
             }}
-            // quality={100}
-            // placeholder='blur'
-            // fill
-            // sizes='100vw'
-            // style={{
-            //   objectFit: 'contain',
+          // quality={100}
+          // placeholder='blur'
+          // fill
+          // sizes='100vw'
+          // style={{
+          //   objectFit: 'contain',
 
-            // }}
+          // }}
           />
           <Image
             src={mobileView}
