@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
+    <main className="flex max-h-screen flex-col p-4 ">
 
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-600 p-4 md:h-52">
         <AcmeLogo />
@@ -47,7 +47,8 @@ export default function Page() {
         <div style={{
           position: 'relative',
           width: '100%',
-          height: 'auto%',
+          height: '100%',
+          maxHeight: 'calc(100vh - 250px)'
         }} className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12 ">
 
           <Image
@@ -58,6 +59,7 @@ export default function Page() {
             style={{
               width: '100%',
               height: 'auto',
+              maxWidth: 900
             }}
           // quality={100}
           // placeholder='blur'
