@@ -15,6 +15,7 @@ export default function Page() {
 
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-600 p-4 md:h-52">
         <AcmeLogo />
+        
       </div>
 
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
@@ -27,20 +28,20 @@ export default function Page() {
             </a>
             , brought to you by Vercel.
           </p>
-          
+
           <div className="flex flex-row md:flex-col gap-4 items-center justify-center">
-          <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-700 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-          >
-            <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
-          <Link
-            href='/dashboard'
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-700 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-          >
-            <span>Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
+            <Link
+              href="/login"
+              className="flex items-center gap-5 self-start rounded-lg bg-blue-700 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+            >
+              <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
+            </Link>
+            <Link
+              href='/dashboard'
+              className="flex items-center gap-5 self-start rounded-lg bg-blue-700 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+            >
+              <span>Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" />
+            </Link>
           </div>
         </div>
         <div style={{

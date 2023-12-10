@@ -221,6 +221,7 @@ export function InvoicesTableSkeleton() {
 export const CreateInvoiceFormSkeleton = () => {
   return (
     <div className=" mx-4 w-full flex flex-col ">
+      <div className="mb-8 h-8 w-16 rounded-md bg-gray-100" />
       <div className="w-32 mb-3 h-6 rounded-md bg-gray-100 " />
       <div className="mb-3 h-8 w-full rounded-md bg-gray-100" />
       <div className="w-32 mb-3 h-6 rounded-md bg-gray-100 " />
